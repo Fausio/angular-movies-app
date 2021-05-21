@@ -1,7 +1,15 @@
 <h2>{{title}}</h2>
 
-<div *ngFor="let movie of movies;" class="movie-component">
 
+
+<img *ngIf="!movies" src="https://miro.medium.com/max/882/1*9EBHIOzhE1XfMYoKz1JcsQ.gif">
+
+<div *ngIf="movies?.length===0">
+    There no movies for thes request..!
+</div>
+
+<!-- movies?.length===0 -->
+<div *ngFor="let movie of movies;" class="movie-component">
     <div>
         <label class="bolde"> Title: </label> {{movie.title}}
     </div>
