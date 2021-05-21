@@ -1,1 +1,14 @@
-Hello Wold
+<h2>{{title}}</h2>
+
+<div *ngFor="let movie of movies;" class="movie-component">
+
+    <div>
+        <label class="bolde"> Title: </label> {{movie.title}}
+    </div>
+    <div>
+        <label class="bolde">Release date:</label> {{movie.releaseDate | date : "dd/MM/YYYY" }}
+    </div>
+    <div>
+        <label class="bolde">Price:</label> {{movie.price | currency: 'EUR'}}
+    </div>
+</div>
