@@ -1,0 +1,25 @@
+<div *ngIf="!list">
+    <span #loading>
+        <ng-content select="[loading] ">     </ng-content>
+    </span>
+    <span *ngIf="!loading.innerHTML.trim()">
+        <img src="https://miro.medium.com/max/882/1*9EBHIOzhE1XfMYoKz1JcsQ.gif">
+    </span>
+</div>
+
+<div *ngIf="list?.length===0">
+    <span #empty>
+        <ng-content select="empty">      </ng-content>
+    </span>
+    <span>
+        There no result for thes request..!
+    </span>
+</div>
+
+
+
+<ng-container *ngIf=" list && list?.length> 0">
+    <ng-content select="[content]">
+
+    </ng-content>
+</ng-container>
