@@ -1,1 +1,18 @@
-<p>movies-list works!</p>
+<!-- <img *ngIf="!movies" src="https://miro.medium.com/max/882/1*9EBHIOzhE1XfMYoKz1JcsQ.gif">
+
+<div *ngIf="movies?.length===0">
+    There no movies for thes request..!
+</div> -->
+
+<!-- movies?.length===0 -->
+<div *ngFor="let movie of movies;" class="movie-component">
+    <div>
+        <label class="bolde"> Title: </label> {{movie.title}}
+    </div>
+    <div>
+        <label class="bolde">Release date:</label> {{movie.releaseDate | date : "dd/MM/YYYY" }}
+    </div>
+    <div>
+        <label class="bolde">Price:</label> {{movie.price | currency: 'EUR'}}
+    </div>
+</div>
