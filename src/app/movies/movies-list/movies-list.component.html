@@ -1,13 +1,13 @@
-<!-- <img *ngIf="!movies" src="https://miro.medium.com/max/882/1*9EBHIOzhE1XfMYoKz1JcsQ.gif">
+<img *ngIf="!movies" src="https://miro.medium.com/max/882/1*9EBHIOzhE1XfMYoKz1JcsQ.gif">
 
 <div *ngIf="movies?.length===0">
     There no movies for thes request..!
-</div> -->
+</div>
 
-<!-- movies?.length===0 -->
-<div *ngFor="let movie of movies;" class="movie-component">
-    <div>
+<div *ngFor="let movie of movies; let i = index  " class="movie-component">
+    <div>{{i+1}}
         <label class="bolde"> Title: </label> {{movie.title}}
+        <button (click)="remove(i+1)" class="removebtn">remove</button>
     </div>
     <div>
         <label class="bolde">Release date:</label> {{movie.releaseDate | date : "dd/MM/YYYY" }}
