@@ -2,6 +2,7 @@
     <span #loading>
         <ng-content select="[loading] ">     </ng-content>
     </span>
+
     <span *ngIf="!loading.innerHTML.trim()">
         <img src="https://miro.medium.com/max/882/1*9EBHIOzhE1XfMYoKz1JcsQ.gif">
     </span>

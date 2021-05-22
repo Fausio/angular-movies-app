@@ -7,7 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit
  {
+   
   title = 'Movie app in angular and .Net Core 5';
+  MarvelMovies: any ;
+  DCMovies: any ;
 
   ngOnInit(): void {
     
@@ -54,8 +57,7 @@ export class AppComponent implements OnInit
 
   }
 
-  MarvelMovies: any ;
-  DCMovies: any ;
+
 
 
 }
