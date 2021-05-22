@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-movies-list',
@@ -9,36 +9,14 @@ import { Component, OnInit } from '@angular/core';
 export class MoviesListComponent implements OnInit {
 
   title = 'Movie app in angular and .Net Core 5';
-  movies;
+
+  @Input()
+  movies:any ;
 
   constructor() { }
 
   ngOnInit(): void {
-
-    setTimeout(() => {
-
-      
-
-      this.movies = [
-        {
-          title: 'Man of stiil',
-          releaseDate: new Date(),
-          price: 122.4
-        },
-        {
-          title: 'Batman VS Superman',
-          releaseDate: new Date(),
-          price: 122.4
-        },
-        {
-          title: 'Justice league Zander Cut',
-          releaseDate: new Date(),
-          price: 122.4
-        }
-      ]
-
-    }, 3000);
-
+ 
   }
 
 
