@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class AppComponent implements OnInit
  {
    
-  title = 'Movie app in angular and .Net Core 5';
+ 
   MarvelMovies: any ;
   DCMovies: any ;
 
@@ -18,6 +18,66 @@ export class AppComponent implements OnInit
       this.DCMovies = [
         {
           title: 'Man of stiil',
+          releaseDate: new Date(),
+          price: 122.4
+        },
+        {
+          title: 'Batman VS Superman',
+          releaseDate: new Date(),
+          price: 122.4
+        },
+        {
+          title: 'Justice league Zander Cut',
+          releaseDate: new Date(),
+          price: 122.4
+        },
+        {
+          title: 'Batman VS Superman',
+          releaseDate: new Date(),
+          price: 122.4
+        },
+        {
+          title: 'Justice league Zander Cut',
+          releaseDate: new Date(),
+          price: 122.4
+        },
+        {
+          title: 'Batman VS Superman',
+          releaseDate: new Date(),
+          price: 122.4
+        },
+        {
+          title: 'Justice league Zander Cut',
+          releaseDate: new Date(),
+          price: 122.4
+        },
+        {
+          title: 'Batman VS Superman',
+          releaseDate: new Date(),
+          price: 122.4
+        },
+        {
+          title: 'Justice league Zander Cut',
+          releaseDate: new Date(),
+          price: 122.4
+        },
+        {
+          title: 'Batman VS Superman',
+          releaseDate: new Date(),
+          price: 122.4
+        },
+        {
+          title: 'Justice league Zander Cut',
+          releaseDate: new Date(),
+          price: 122.4
+        },
+        {
+          title: 'Batman VS Superman',
+          releaseDate: new Date(),
+          price: 122.4
+        },
+        {
+          title: 'Justice league Zander Cut',
           releaseDate: new Date(),
           price: 122.4
         },

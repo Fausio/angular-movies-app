@@ -1,9 +1,13 @@
-<h2>{{title}}</h2>
+<app-menu>
+
+</app-menu>
+
+<div class="container">
+
+    <h3>In cinema</h3>
+    <app-movies-list [movies]="DCMovies "> </app-movies-list>
 
 
-<h3>In cinema</h3>
-<app-movies-list [movies]="DCMovies "> </app-movies-list>
-
-
-<h3>In reveal</h3>
-<app-movies-list [movies]="MarvelMovies"> </app-movies-list>
+    <h3>In reveal</h3>
+    <app-movies-list [movies]="MarvelMovies"> </app-movies-list>
+</div>

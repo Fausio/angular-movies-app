@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
+  Apptitle = 'Movie app in angular and .Net Core 5';
+
   constructor() { }
 
   ngOnInit(): void {
