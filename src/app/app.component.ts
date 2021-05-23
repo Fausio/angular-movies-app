@@ -118,6 +118,8 @@ export class AppComponent implements OnInit
   }
 
 
-
+  handleRating(rate: number){
+    alert(`You select ${rate} stars`);
+  }
 
 }

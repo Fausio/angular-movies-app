@@ -23,4 +23,7 @@ export class MoviesListComponent implements OnInit {
   ngOnInit(): void {
 
   }
+
+
+
 }
