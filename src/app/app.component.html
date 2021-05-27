@@ -4,14 +4,22 @@
 <app-rating (onRating)="handleRating($event)">
 </app-rating>
 
+<!-- <input type="text" (input)="tt = $event.target.value"/> -->
+<!-- <input (input)="saverange($event)" /> -->
+<!-- <app-life-cicle-teste [title] = "title"></app-life-cicle-teste> -->
 
+<h2>Lift of availible movies </h2>
+<input type="checkbox"  checked (change) ="display = !display" text="Display"/> Display
 
-<!-- <div class="container">
+<div *ngIf="display" >
+    <div class="container">
 
-    <h3>In cinema</h3>
-    <app-movies-list [movies]="DCMovies "> </app-movies-list>
+        <h3>In cinema</h3>
+        <app-movies-list [movies]="DCMovies "> </app-movies-list>
+    
+    
+        <h3>In reveal</h3>
+        <app-movies-list [movies]="MarvelMovies"> </app-movies-list>
+    </div>
+</div>
 
-
-    <h3>In reveal</h3>
-    <app-movies-list [movies]="MarvelMovies"> </app-movies-list>
-</div> -->
