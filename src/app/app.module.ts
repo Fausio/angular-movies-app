@@ -9,16 +9,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MaterialModule} from './material/material.module';
 import { MenuComponent } from './menu/menu.component';
 import { RatingComponent } from './utilities/rating/rating.component';
-import { LifeCicleTesteComponent } from './life-cicle-teste/life-cicle-teste.component';
-
+ 
 @NgModule({
   declarations: [
     AppComponent,
     MoviesListComponent,
     GenericListComponent,
     MenuComponent,
-    RatingComponent,
-    LifeCicleTesteComponent
+    RatingComponent 
   ],
   imports: [
     BrowserModule,

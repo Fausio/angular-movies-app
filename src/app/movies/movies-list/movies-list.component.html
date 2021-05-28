@@ -4,15 +4,26 @@
         No movie result of this reques.
     </ng-container>
 
-
-
-
     <ng-container content>
+<div class="movies-container">
 
-        <div *ngFor="let movie of movies; let i = index  " class="movie-component">
-            <div>{{i+1}}.  <label class="bolde">  {{movie.title}}  </label>   
-                <button class="left-side" (click)="remove(i+1)" class="removebtn">remove</button>
+
+        <div *ngFor="let movie of movies; let i = index  " class="movie-container">
+         <a>
+             <img [src]="movie.poster" alt="poster" />
+         </a>
+         <p>
+             {{movie.title}}
+         </p>
+         <div>
+             <a mat-flat-button color="primary"> Edit</a>
+        <button mat-flat-button color="warn" type="button">
+            Delete
+        </button>
             </div>
+         
+            <div>{{i+1}}.  <label class="bolde">  {{movie.title}}  </label>   
+                     </div>
             <div>
                 <label class="bolde">Release date:</label> {{movie.releaseDate | date : "dd/MM/YYYY" }}
             </div>
@@ -23,6 +34,8 @@
                
             </div>
         </div>
+
+    </div>
 
     </ng-container>
 </app-generic-list>
