@@ -1,0 +1,21 @@
+
+ 
+<app-rating (onRating)="handleRating($event)">
+</app-rating>
+
+
+<h2>Lift of availible movies </h2>
+<input type="checkbox"  checked (change) ="display = !display" text="Display"/> Display
+
+<div *ngIf="display">
+    <div class="container">
+
+        <h3>In cinema</h3>
+        <app-movies-list [movies]="DCMovies "> </app-movies-list>
+    
+    
+        <h3>In reveal</h3>
+        <app-movies-list [movies]="MarvelMovies"> </app-movies-list>
+    </div>
+</div>
+
