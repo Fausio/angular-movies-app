@@ -16,7 +16,7 @@ export class GenreCreateComponent implements OnInit {
   SaveChenges() {
     // save file
 
-    this.route.navigate(['/']);
+    this.route.navigate(['/genre']);
   }
 
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-movietheater-index',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MovietheaterIndexComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
+  }
+
+  SaveChanges(){
+    this.router.navigate(['/movietheater/create'])
   }
 
 }

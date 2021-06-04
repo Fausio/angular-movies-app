@@ -16,7 +16,7 @@ export class GenreIndexComponent implements OnInit {
   }
 
   SaveChenges(){
-    this.router.navigate(['/genre-create'])
+    this.router.navigate(['/genre/create'])
   }
  
 }
