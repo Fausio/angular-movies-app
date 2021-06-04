@@ -15,21 +15,25 @@ import { MovieEditComponent } from './movies/movie-edit/movie-edit.component';
 const routes: Routes = [
 
   { path: '', component: HomeComponent },
-  
-  { path:'genre', component:GenreIndexComponent},
-  { path:'genre/create', component:GenreCreateComponent},
 
-  { path:'ator', component:AtorIndexComponent},
-  { path:'ator/create', component:AtorCreateComponent},
-  { path:'ator/edit/:id', component:AtorEditComponent},
+  { path: 'genre', component: GenreIndexComponent },
+  { path: 'genre/create', component: GenreCreateComponent },
 
-  { path:'movietheater', component:MovietheaterIndexComponent},
-  { path:'movietheater/create', component:MovietheaterCreateComponent},
-  { path:'movietheater/edit/:id', component:MovietheaterEditComponent},
+  { path: 'ator', component: AtorIndexComponent },
+  { path: 'ator/create', component: AtorCreateComponent },
+  { path: 'ator/edit/:id', component: AtorEditComponent },
 
-  { path:'movie/create', component:MovieCreateComponent} ,
-  { path:'movie/edit/:id', component:MovieEditComponent} 
-  
+  { path: 'movietheater', component: MovietheaterIndexComponent },
+  { path: 'movietheater/create', component: MovietheaterCreateComponent },
+  { path: 'movietheater/edit/:id', component: MovietheaterEditComponent },
+
+  { path: 'movie/create', component: MovieCreateComponent },
+  { path: 'movie/edit/:id', component: MovieEditComponent },
+
+  // ---------------------------Wildcard as a Catch-All Route-----------------------------------
+  { path: '**', redirectTo: '' }
+
+
 ];
 
 @NgModule({
