@@ -16,7 +16,10 @@ import { AtorIndexComponent } from './ator/ator-index/ator-index.component';
 import { AtorCreateComponent } from './ator/ator-create/ator-create.component';
 import { MovietheaterIndexComponent } from './movie-theater/movietheater-index/movietheater-index.component';
 import { MovietheaterCreateComponent } from './movie-theater/movietheater-create/movietheater-create.component';
-import { MovieCreateComponent } from './movies/movie-create/movie-create.component'; 
+import { MovieCreateComponent } from './movies/movie-create/movie-create.component';
+import { AtorEditComponent } from './ator/ator-edit/ator-edit.component';
+import { MovieEditComponent } from './movies/movie-edit/movie-edit.component';
+import { MovietheaterEditComponent } from './movie-theater/movietheater-edit/movietheater-edit.component'; 
  
 @NgModule({
   declarations: [
@@ -32,7 +35,10 @@ import { MovieCreateComponent } from './movies/movie-create/movie-create.compone
     AtorCreateComponent,
     MovietheaterIndexComponent,
     MovietheaterCreateComponent,
-    MovieCreateComponent 
+    MovieCreateComponent,
+    AtorEditComponent,
+    MovieEditComponent,
+    MovietheaterEditComponent 
   ],
   imports: [
     BrowserModule,
