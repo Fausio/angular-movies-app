@@ -10,7 +10,13 @@ import {MaterialModule} from './material/material.module';
 import { MenuComponent } from './menu/menu.component';
 import { RatingComponent } from './utilities/rating/rating.component';
 import { HomeComponent } from './home/home.component';
-import { GenreIndexComponent } from './genre/genre-index/genre-index.component'; 
+import { GenreIndexComponent } from './genre/genre-index/genre-index.component';
+import { GenreCreateComponent } from './genre/genre-create/genre-create.component';
+import { AtorIndexComponent } from './ator/ator-index/ator-index.component';
+import { AtorCreateComponent } from './ator/ator-create/ator-create.component';
+import { MovietheaterIndexComponent } from './movie-theater/movietheater-index/movietheater-index.component';
+import { MovietheaterCreateComponent } from './movie-theater/movietheater-create/movietheater-create.component';
+import { MovieCreateComponent } from './movies/movie-create/movie-create.component'; 
  
 @NgModule({
   declarations: [
@@ -20,7 +26,13 @@ import { GenreIndexComponent } from './genre/genre-index/genre-index.component';
     MenuComponent,
     RatingComponent,
     HomeComponent,
-    GenreIndexComponent 
+    GenreIndexComponent,
+    GenreCreateComponent,
+    AtorIndexComponent,
+    AtorCreateComponent,
+    MovietheaterIndexComponent,
+    MovietheaterCreateComponent,
+    MovieCreateComponent 
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-genre-index',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GenreIndexComponent implements OnInit {
   
+  constructor(private router: Router){
+
+  }
   ngOnInit(): void {
     throw new Error('Method not implemented.');
   }
 
+  SaveChenges(){
+    this.router.navigate(['/genre-create'])
+  }
  
 }
