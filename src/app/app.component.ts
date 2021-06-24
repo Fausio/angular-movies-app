@@ -7,7 +7,9 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit
  {
-   
+  
+  title: any;
+
   ngOnInit(): void {
     throw new Error('Method not implemented.');
   }

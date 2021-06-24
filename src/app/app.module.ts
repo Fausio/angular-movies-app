@@ -20,6 +20,7 @@ import { MovieCreateComponent } from './movies/movie-create/movie-create.compone
 import { AtorEditComponent } from './ator/ator-edit/ator-edit.component';
 import { MovieEditComponent } from './movies/movie-edit/movie-edit.component';
 import { MovietheaterEditComponent } from './movie-theater/movietheater-edit/movietheater-edit.component'; 
+import { ReactiveFormsModule } from '@angular/forms';
  
 @NgModule({
   declarations: [
@@ -44,7 +45,9 @@ import { MovietheaterEditComponent } from './movie-theater/movietheater-edit/mov
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    ReactiveFormsModule 
+
   ],
   providers: [],
   bootstrap: [AppComponent]

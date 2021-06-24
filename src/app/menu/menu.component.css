@@ -3,8 +3,15 @@ mat-toolbar {
     position: -webkit-sticky;
     top: 0;
     z-index: 1000;
+    margin-right: 1em;
 }
 
 .menu-color {
     color: primary;
 }
+
+
+/* button{
+
+    margin-right: 1em;
+} */
