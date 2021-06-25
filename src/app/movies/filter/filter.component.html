@@ -6,19 +6,31 @@
         <mat-label>
              Title
         </mat-label>
-        <input  matInput>
+        <input forControlName="Title"  matInput>
        </mat-form-field>
        
        <mat-form-field appearance="outline">
            <mat-label>
                 Genre
            </mat-label>
-           <mat-select> 
-               <mat-option [value]="'1'">Farowest</mat-option>
-               <mat-option [value]="'2'">Drama</mat-option>
-               <mat-option [value]="'3'">Comedy</mat-option>
+           <mat-select formControlName="GenreId"> 
+               <mat-option  *ngFor="let item of  genres" [value]="item.id" >{{item.Name}}</mat-option> 
            </mat-select>
        </mat-form-field>
+
+
+       <div>             
+            <mat-checkbox formControlName ="UpcomingReleases"> Upcoming Releases </mat-checkbox> 
+       </div>
+
+       <div>             
+        <mat-checkbox formControlName ="InTheaters"> In Theaters </mat-checkbox> 
+        </div>
+
+        <div>             
+            <button mat-flat-button color="warn">Clear</button>
+        </div>
+      
 </form>
 
 
