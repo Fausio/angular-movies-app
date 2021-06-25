@@ -1,7 +1,4 @@
 <h2>Create actors </h2>
  
     
-
-<button mat-flat-button color="primary"  routerLink ="genre-create" (click)="SaveChanges()" >Create </button> 
- 
-  
+<app-ator-form  (onSaveChanges)="saveChanges($event)"></app-ator-form>

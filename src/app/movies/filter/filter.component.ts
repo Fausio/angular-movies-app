@@ -59,8 +59,7 @@ export class FilterComponent implements OnInit {
   ngOnInit(): void {
     
 
-    this.form = this.formBuilder.group({
-
+    this.form = this.formBuilder.group({ 
       Title:'',
       GenreId:0,
       UpcomingReleases:false,

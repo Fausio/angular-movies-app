@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { atorCreationDTO } from '../ator.model';
 
 @Component({
   selector: 'app-ator-create',
@@ -13,7 +14,9 @@ export class AtorCreateComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  SaveChanges(){
+  saveChanges(event : atorCreationDTO){
+
+    console.log(event);
     this.router.navigate(['/ator'])
   }
 
