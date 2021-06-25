@@ -3,14 +3,16 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-filter',
-  templateUrl: './filter.component.html',
+  templateUrl:'./filter.component.html',
   styleUrls: ['./filter.component.css']
 })
 export class FilterComponent implements OnInit {
 
   constructor(private formBuilder: FormBuilder) { }
 
-  form : FormGroup| any;
+  form: FormGroup | any  ;
+
+  filterMovies: any;
 
   genres = [
     { id: 1, Name: 'Farowest' },
@@ -20,6 +22,42 @@ export class FilterComponent implements OnInit {
 
 
   ngOnInit(): void {
+   
+    this.filterMovies = [
+      {
+        title: 'Man of stiil',
+        releaseDate: new Date(),
+        price: 122.4,
+        poster : "https://image.tmdb.org/t/p/w154/w8BVC3qrCWCiTHRz4Rft12dtQF0.jpg"
+      },
+      {
+        title: 'Batman VS Superman',
+        releaseDate: new Date(),
+        price: 122.5,
+        poster : "https://image.tmdb.org/t/p/w154/zO5913BWcWYrhgACNpaaw9CCycX.jpg"
+      },
+      {
+        title: 'Justice league Zander Cut',
+        releaseDate: new Date(),
+        price: 122.4,
+        poster:"https://image.tmdb.org/t/p/w154/kn72J6BFcN71VYOl8sTVeo7x9ph.jpg"
+        
+      },
+      {
+        title: 'Batman VS Superman',
+        releaseDate: new Date(),
+        price: 122.4,
+        poster: "https://image.tmdb.org/t/p/w154/w8Hi3GI4q1oR6EImrDWrAQFn8Ha.jpg"
+      },
+      {
+        title: 'Justice league Zander Cut',
+        releaseDate: new Date(),
+        price: 122.4,
+        poster: "https://image.tmdb.org/t/p/w154/qDA95ebiy3W3m8hTRB3xZNZVVBM.jpg"
+   
+      } 
+    ]
+
     this.form = this.formBuilder.group({
 
       Title:'',
@@ -27,10 +65,19 @@ export class FilterComponent implements OnInit {
       UpcomingReleases:false,
       InTheaters: false
     });
+ 
+    this.form.valueChanges
+    .subscribe((values: any) => {
+      console.log(values);
+    });
+
+
+
   }
 
   clearForm(){
-    
+
   }
+
 
 }

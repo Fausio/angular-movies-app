@@ -1,12 +1,12 @@
 <h2>Search Movies</h2>
 
 
-<form>
+<form [formGroup]="form">
     <mat-form-field appearance="outline">
         <mat-label>
              Title
         </mat-label>
-        <input forControlName="Title"  matInput>
+        <input formControlName="Title"  matInput>
        </mat-form-field>
        
        <mat-form-field appearance="outline">
@@ -30,6 +30,8 @@
         <div>             
             <button mat-flat-button color="warn" (click)="clearForm()">Clear</button>
         </div>
+
+        <app-movies-list [movies]="filterMovies"> </app-movies-list>
       
 </form>
 
