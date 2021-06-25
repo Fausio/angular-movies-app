@@ -11,7 +11,7 @@ export class AppComponent implements OnInit
   title: any;
 
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
+  //  throw new Error('Method not implemented.');
   }
     
    

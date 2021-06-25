@@ -1,19 +1,10 @@
 <h2>Create genre</h2>
  
     
-<form (submit) ="SaveChenges()" [formGroup] = "form">
-      <mat-form-field appearance ="outline">
-          <mat-label>
-              Name*
-          </mat-label>
-          <input formControlName="Name" matInput/>
-          <mat-error *ngIf="form.invalid">{{GetErrorMessage()}}</mat-error>
-      </mat-form-field>
 
-      <div>
-        <button mat-flat-button color="primary" [disabled] ="form.invalid">Create</button> 
-        <a mat-stroked-button routerLink ="/genre">Cancel</a>
-      </div>
-</form>
+
+<app-form-genre (onSaveChenges) = "SaveChenges($event)">
+
+</app-form-genre>
 
 

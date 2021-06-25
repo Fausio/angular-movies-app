@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validator, Validators } from '@angular/forms';
-import { Router } from '@angular/router';
+import { Router } from '@angular/router'; 
 import { fistLatterUpperCase } from 'src/app/validators/first_latter_uppar_case';
+import { genreCreationDTO } from '../genres.model';
 
 @Component({
   selector: 'app-genre-create',
@@ -23,14 +24,14 @@ export class GenreCreateComponent implements OnInit {
           Validators.required,
           Validators.minLength(3),
           fistLatterUpperCase()]
-         
+
       }]
     });
   }
 
-  SaveChenges() {
+  SaveChenges(genreCreationDTO: genreCreationDTO) {
     // save file
-
+    console.log(genreCreationDTO);
     this.route.navigate(['/genre']);
   }
 
@@ -46,7 +47,7 @@ export class GenreCreateComponent implements OnInit {
       return 'This minimun lenght is 3 ';
     }
     if (field.hasError('fistLatterUpperCase')) {
-      return  field.getError('fistLatterUpperCase').message;
+      return field.getError('fistLatterUpperCase').message;
     }
 
     return '';
