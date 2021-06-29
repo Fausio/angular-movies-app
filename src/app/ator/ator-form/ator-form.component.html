@@ -15,13 +15,17 @@
         <mat-datepicker #picker></mat-datepicker>
     </mat-form-field>
 
-<app-input-img
+    <h4>Select picture</h4>
 
+<app-input-img
 [urlCurrentImage] ="atorModel?.Pic"
 (OnImageSelected)="OnImageSelected($event)">
-
 </app-input-img>
     
+<h4>Write the biography</h4>
+
+<app-input-markdown></app-input-markdown>
+
     <div>             
         <button mat-flat-button color="primary" [disabled]="form.invalid">Save</button>
         <a mat-stroked-button routerLink="/actors">Cancel</a>
