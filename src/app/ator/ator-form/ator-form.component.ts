@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { atorCreationDTO } from '../ator.model';
+import { atorCreationDTO, atorDTO } from '../ator.model';
 
 @Component({
   selector: 'app-ator-form',
@@ -12,11 +12,15 @@ export class AtorFormComponent implements OnInit {
   constructor(private formBulder:FormBuilder) { }
 
   form: FormGroup | any  ;
+
   @Output()
   onSaveChanges =   new EventEmitter<atorCreationDTO>();
 
   @Input()
-  atorModel: atorCreationDTO | undefined;
+  urlCurrentImage: string| undefined;
+
+  @Input()
+  atorModel: atorDTO | undefined;
 
   ngOnInit(): void {
  
@@ -24,8 +28,9 @@ export class AtorFormComponent implements OnInit {
 
       Name:['',{ validators:[Validators.required]}],
       
-      DateOfBirth:['',{validators:[Validators.required]}] 
-       
+      DateOfBirth:['',{validators:[Validators.required]}] ,
+      
+      Pic:''
     });
 
     if(this.atorModel !== undefined){

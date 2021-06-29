@@ -11,6 +11,7 @@ export class InputImgComponent implements OnInit {
   constructor() { }
 
   imageBase64: string|any;
+  
 @Input()
 urlCurrentImage: string | any ;
 
@@ -27,7 +28,7 @@ urlCurrentImage: string | any ;
  
        toBase64(file).then((x: string|any) => this.imageBase64 = x);
       this.OnImageSelected.emit(file);
-       
+       this.urlCurrentImage = null;
       }
   }
 
