@@ -82,8 +82,9 @@ export class FilterComponent implements OnInit {
       }
 
   }
-  clearForm(){
 
+  clearForm(){
+    this.form.reset();
   }
 
 

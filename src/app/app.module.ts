@@ -25,6 +25,7 @@ import { FormGenreComponent } from './genre/form-genre/form-genre.component';
 import { GenreEditComponent } from './genre/genre-edit/genre-edit.component';
 import { FilterComponent } from './movies/filter/filter.component';
 import { AtorFormComponent } from './ator/ator-form/ator-form.component';
+import { InputImgComponent } from './utilities/input-img/input-img.component';
 
 
 @NgModule({
@@ -48,7 +49,8 @@ import { AtorFormComponent } from './ator/ator-form/ator-form.component';
     FormGenreComponent,
     GenreEditComponent,
     FilterComponent,
-    AtorFormComponent 
+    AtorFormComponent,
+    InputImgComponent 
   ],
   imports: [
     BrowserModule,

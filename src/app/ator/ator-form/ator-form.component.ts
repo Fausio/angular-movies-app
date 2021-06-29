@@ -25,6 +25,7 @@ export class AtorFormComponent implements OnInit {
       Name:['',{ validators:[Validators.required]}],
       
       DateOfBirth:['',{validators:[Validators.required]}] 
+       
     });
 
     if(this.atorModel !== undefined){
@@ -32,6 +33,9 @@ export class AtorFormComponent implements OnInit {
     }
   }
 
+  OnImageSelected(image: any){
+    this.form.get('Pic').setValue(image);
+  }
 
   saveChanges(){
     this.onSaveChanges.emit(this.form.value);

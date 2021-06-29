@@ -1,4 +1,4 @@
-<form  [formGroup]="form">
+<form  (submit)="saveChanges()" [formGroup]="form">
     <mat-form-field appearance="outline">
         <mat-label>
              Name
@@ -15,8 +15,16 @@
         <mat-datepicker #picker></mat-datepicker>
     </mat-form-field>
 
+<app-input-img
+
+
+(OnImageSelected)="OnImageSelected($event)">
+
+</app-input-img>
+    
     <div>             
-        <button mat-flat-button color="primary" (click)="saveChanges()">Save</button>
+        <button mat-flat-button color="primary" [disabled]="form.invalid">Save</button>
+        <a mat-stroked-button routerLink="/actors">Cancel</a>
     </div>
 
 </form>

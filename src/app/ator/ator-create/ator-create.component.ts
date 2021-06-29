@@ -20,4 +20,6 @@ export class AtorCreateComponent implements OnInit {
     this.router.navigate(['/ator'])
   }
 
+
+
 }
