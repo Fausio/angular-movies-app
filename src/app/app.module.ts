@@ -26,6 +26,7 @@ import { GenreEditComponent } from './genre/genre-edit/genre-edit.component';
 import { FilterComponent } from './movies/filter/filter.component';
 import { AtorFormComponent } from './ator/ator-form/ator-form.component';
 import { InputImgComponent } from './utilities/input-img/input-img.component';
+import { InputMarkdownComponent } from './Utilities/input-markdown/input-markdown.component';
 
 
 @NgModule({
@@ -50,7 +51,8 @@ import { InputImgComponent } from './utilities/input-img/input-img.component';
     GenreEditComponent,
     FilterComponent,
     AtorFormComponent,
-    InputImgComponent 
+    InputImgComponent,
+    InputMarkdownComponent 
   ],
   imports: [
     BrowserModule,
