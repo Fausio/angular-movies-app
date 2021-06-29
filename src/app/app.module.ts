@@ -27,7 +27,7 @@ import { FilterComponent } from './movies/filter/filter.component';
 import { AtorFormComponent } from './ator/ator-form/ator-form.component';
 import { InputImgComponent } from './utilities/input-img/input-img.component';
 import { InputMarkdownComponent } from './Utilities/input-markdown/input-markdown.component';
-
+import {MarkdownModule} from 'ngx-markdown';
 
 @NgModule({
   declarations: [
@@ -53,6 +53,7 @@ import { InputMarkdownComponent } from './Utilities/input-markdown/input-markdow
     AtorFormComponent,
     InputImgComponent,
     InputMarkdownComponent 
+    
   ],
   imports: [
     BrowserModule,
@@ -60,7 +61,8 @@ import { InputMarkdownComponent } from './Utilities/input-markdown/input-markdow
     BrowserAnimationsModule,
     MaterialModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    MarkdownModule.forRoot()
 
   ],
   providers: [],
