@@ -20,7 +20,7 @@ import { MovieCreateComponent } from './movies/movie-create/movie-create.compone
 import { AtorEditComponent } from './ator/ator-edit/ator-edit.component';
 import { MovieEditComponent } from './movies/movie-edit/movie-edit.component';
 import { MovietheaterEditComponent } from './movie-theater/movietheater-edit/movietheater-edit.component'; 
-import { ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { FormGenreComponent } from './genre/form-genre/form-genre.component';
 import { GenreEditComponent } from './genre/genre-edit/genre-edit.component';
 import { FilterComponent } from './movies/filter/filter.component';
@@ -59,7 +59,8 @@ import { InputMarkdownComponent } from './Utilities/input-markdown/input-markdow
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    ReactiveFormsModule 
+    ReactiveFormsModule,
+    FormsModule
 
   ],
   providers: [],
