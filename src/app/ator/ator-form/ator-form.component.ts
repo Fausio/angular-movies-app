@@ -30,7 +30,9 @@ export class AtorFormComponent implements OnInit {
       
       DateOfBirth:['',{validators:[Validators.required]}] ,
       
-      Pic:''
+      Pic:'' ,
+
+      Biography: ''
     });
 
     if(this.atorModel !== undefined){
@@ -40,6 +42,18 @@ export class AtorFormComponent implements OnInit {
 
   OnImageSelected(image: any){
     this.form.get('Pic').setValue(image);
+  }
+
+  changeMarkdown(content: string){
+
+    this.form.get('Biography').setValue(content);
+  }
+ 
+
+  f(content: string){
+
+    console.log("loged")
+    this.form.get('Biography').setValue(content);
   }
 
   saveChanges(){

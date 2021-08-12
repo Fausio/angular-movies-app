@@ -24,7 +24,7 @@
     
 <h4>Write the biography</h4>
 
-<app-input-markdown></app-input-markdown>
+<app-input-markdown (changeMarkdown)="changeMarkdown($event)" ></app-input-markdown>
 
     <div>             
         <button mat-flat-button color="primary" [disabled]="form.invalid">Save</button>
